@@ -16,7 +16,7 @@ namespace CO453C_Graphics
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new T61_StringForm());
         }
     }
 }
