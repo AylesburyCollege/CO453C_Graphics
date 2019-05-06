@@ -34,12 +34,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 361);
+            this.ClientSize = new System.Drawing.Size(784, 561);
             this.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "T61_StringForm";
             this.Text = "Derek\'s Draw String Example";
-            this.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawString);
+            this.Load += new System.EventHandler(this.T61_StringForm_Load);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.PaintForm);
             this.ResumeLayout(false);
 
         }
