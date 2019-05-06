@@ -12,7 +12,8 @@ namespace CO453C_Graphics
 {
     public partial class PickForm : Form
     {
-        private Random generator = new Random();
+        private static Random generator = new Random();
+
         private Pen myPen;
         private int x, y;
         private char choice;
@@ -32,11 +33,8 @@ namespace CO453C_Graphics
         {
             Graphics g = e.Graphics;
 
-            int red = generator.Next(256);
-            int green = generator.Next(256);
-            int blue = generator.Next(256);
+            myPen = new Pen(CreateColor(), 4);
 
-            myPen = new Pen(Color.FromArgb(red, green, blue), 4);
             x = generator.Next(this.Width - 100);
             y = generator.Next(this.Height - 100);
 
@@ -47,6 +45,17 @@ namespace CO453C_Graphics
                 default:
                     break;
             }
+        }
+
+        public static Color CreateColor()
+        {
+            int red = generator.Next(256);
+            int green = generator.Next(256);
+            int blue = generator.Next(256);
+
+            int rgb = ((red * 256 * 256) + (green * 256) + blue);
+
+            return Color.FromArgb(rgb);
         }
 
         private void DrawRectangle(Graphics g)

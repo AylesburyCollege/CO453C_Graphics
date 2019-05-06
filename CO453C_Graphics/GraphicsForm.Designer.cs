@@ -1,6 +1,6 @@
 ﻿namespace CO453C_Graphics
 {
-    partial class T61_StringForm
+    partial class GraphicsForm
     {
         /// <summary>
         /// Required designer variable.
@@ -39,9 +39,8 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "T61_StringForm";
             this.Text = "Derek\'s Draw String Example";
-            this.Load += new System.EventHandler(this.T61_StringForm_Load);
+            this.Load += new System.EventHandler(this.GraphicsForm_Load);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.PaintForm);
-            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.T61_StringForm_KeyPress);
             this.ResumeLayout(false);
 
         }
