@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PickForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PickForm.Designer.cs">
+      <DependentUpon>PickForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="T61_StringForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +60,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="PickForm.resx">
+      <DependentUpon>PickForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

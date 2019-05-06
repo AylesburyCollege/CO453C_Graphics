@@ -92,5 +92,11 @@ namespace CO453C_Graphics
         {
             this.BackColor = Color.White;
         }
+
+        private void T61_StringForm_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+
+        }
     }
 }

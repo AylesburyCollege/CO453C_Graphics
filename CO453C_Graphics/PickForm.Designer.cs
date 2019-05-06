@@ -1,6 +1,6 @@
 ﻿namespace CO453C_Graphics
 {
-    partial class T61_StringForm
+    partial class PickForm
     {
         /// <summary>
         /// Required designer variable.
@@ -30,18 +30,17 @@
         {
             this.SuspendLayout();
             // 
-            // T61_StringForm
+            // PickForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 561);
-            this.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "T61_StringForm";
-            this.Text = "Derek\'s Draw String Example";
-            this.Load += new System.EventHandler(this.T61_StringForm_Load);
-            this.Paint += new System.Windows.Forms.PaintEventHandler(this.PaintForm);
-            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.T61_StringForm_KeyPress);
+            this.ClientSize = new System.Drawing.Size(506, 373);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Name = "PickForm";
+            this.Text = "PickForm";
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.PickForm_Paint);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PickForm_KeyPress);
             this.ResumeLayout(false);
 
         }
@@ -49,4 +48,3 @@
         #endregion
     }
 }
-
