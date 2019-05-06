@@ -53,9 +53,7 @@ namespace CO453C_Graphics
             int green = generator.Next(256);
             int blue = generator.Next(256);
 
-            int rgb = ((red * 256 * 256) + (green * 256) + blue);
-
-            return Color.FromArgb(rgb);
+            return Color.FromArgb(red,green,blue);
         }
 
         private void DrawRectangle(Graphics g)
