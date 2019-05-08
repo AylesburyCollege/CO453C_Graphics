@@ -60,6 +60,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SketchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SketchForm.Designer.cs">
+      <DependentUpon>SketchForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="PickForm.resx">
       <DependentUpon>PickForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -74,6 +80,9 @@
     </Compile>
     <EmbeddedResource Include="GraphicsForm.resx">
       <DependentUpon>GraphicsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SketchForm.resx">
+      <DependentUpon>SketchForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
